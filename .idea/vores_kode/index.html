@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vi bruger fetch</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Hent addresser</h1>
+
+
+  <input id="inputVejnavn"
+         class="bredde"
+         type="text"
+         placeholder="Indtast vejnavn">
+  <button id="pbSøgEfterVejnavn"
+          class="btn bredde">
+    Søg efter vejnavn</button>
+
+  <br><br>
+
+  <!-- laver en dropdown -->
+  <label for="ddAddresses">Vejnavne</label>
+  <br>
+  <select id="ddAddresses"
+          class="bredde"></select>
+
+  <!-- Knap som når man trykker på den, så fylder man array'et op -->
+  <button  id="pbFillDd"
+           class="btn bredde pbFillDropdown">
+    Tilføj vejnavne til dropdown</button>
+
+  <br><br>
+
+  <input id="inputFjernFraDd"
+         class="bredde"
+         type="text"
+         placeholder="Indtast vejnavn du vil fjerne fra dropdown">
+  <button id="pbFjernVejnavn"
+          class="btn bredde">
+    Fjern vejnavn fra dropdown</button>
+
+  <br><br>
+
+
+  <p id="printAdresser"></p>
+
+
+
+
+  <script src="fetch.js"></script>
+
+</body>
+</html>
